@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --main-fg-color: rgb(56, 138, 56);
+}
+
+.navbar-container {
+  height: 50px;
+  background-color: var(--main-fg-color);
+  margin-bottom: 20px;
+}
+
+.navbar {
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  max-width: 1200px;
+  padding: 0 20px;
+  /* width: 1200px; */
+}
+
+.navbar-left {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin-left: 5px;
+  width: 20%;
+}
+
+.navbar-right a {
+  text-decoration: none;
+  color: white;
+  margin: 5px;
+  text-transform: uppercase;
+  padding: 12px 8px;
+  /* width: 80%; */
+}
+
+.navbar-right a:hover {
+  background-color: rgb(0, 66, 0);
+}
+
+/* body */
+.body-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: var(--main-fg-color);
+}
+.about-us {
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  box-shadow: 1px 2px 13px grey;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.about-left {
+  width: 20%;
+}
+
+.about-left img {
+  width: 100%;
+}
+
+.about-right {
+  width: 77%;
+}
+
+.about-right > div {
+  margin-top: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px;
+  background-color: rgb(241, 245, 242);
+  border-radius: 5px;
+  box-shadow: 1px 2px 13px grey;
+  margin-top: 5px;
+  width: 500px;
+}
+
+input,
+textarea,
+select {
+  margin-bottom: 9px;
+  padding: 4px;
+}
+
+input[type="button"] {
+  background-color: var(--main-fg-color);
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 7px;
+}
+
+.remember {
+  font-size: small;
+}
+
+label {
+  font-size: 15px;
+}
+
+.spacer {
+  height: 90px;
+}
+
+/* Footer */
+.footer-container {
+  height: 50px;
+  background-color: var(--main-fg-color);
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  /* left: 0; */
+  /* right: 0; */
+  width: 100%;
+  margin-top: 50px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  /* width: 1200px; */
+}
+
+.footer p {
+  color: white;
+}
+
+/* Calculator */
+td {
+  width: 30px;
+  height: 80px;
+  background-color: rgb(70, 160, 205);
+  color: white;
+  cursor: pointer;
+  position: relative;
+}
+td span {
+  font-size: 2em;
+  font-weight: 500;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.posneg {
+  font-size: 1em;
+}
+
+.clear {
+  color: #f36c02;
+}
+
+.num {
+  background-color: #1b1e26;
+}
+
+.arith {
+  background-color: #272b2e;
+}
+
+tr {
+  width: 300px;
+}
+
+table {
+  height: 400px;
+  width: 400px;
+  border: 5px solid grey;
+  border-radius: 10px;
+  padding: 30px 30px;
+  background-color: rgb(148, 143, 143);
+}
+
+th {
+  border: 5px solid #272b2e;
+  height: 90px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  position: relative;
+  background-color: #384047;
+  color: white;
+}
+
+th div {
+  height: 30px;
+  display: flex;
+  justify-content: end;
+  font-size: 3em;
+  font-weight: 500;
+  padding-right: 9px;
+  align-items: center;
+}
+
+/* Bonus */
+.calc {
+  height: 400px;
+  width: 400px;
+  border: 5px solid grey;
+  border-radius: 10px;
+  padding: 30px 30px;
+  background-color: rgb(148, 143, 143);
+}
+
+.flex-calc {
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid grey; */
+  padding: 30px;
+  border-radius: 15px;
+  background-color: #272b2e;
+  box-shadow: 1px 2px 13px grey;
+}
+
+.disp1 {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  /* border: 1px solid gray; */
+  box-shadow: 1px 2px 3px grey;
+  border-radius: 5px;
+  margin-bottom: 25px;
+  height: 50px;
+  background-color: rgb(64, 63, 63);
+}
+.disp1 p {
+  padding-right: 5px;
+  font-size: 2.5em;
+  font-weight: 500;
+  color: white;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  width: 250px;
+  color: white;
+}
+.row div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: grey;
+  /* background-color: #f36c02; */
+  font-size: 1.3em;
+}

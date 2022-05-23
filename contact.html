@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Contact Us</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <!-- Navbar -->
+      <nav class="navbar-container">
+        <div class="navbar">
+          <div class="navbar-left"><span>Alt__</span><span>school</span></div>
+          <div class="navbar-right">
+            <a href="index.html" class="about">About Me</a>
+            <a href="contact.html" class="contact">Contact</a>
+            <a href="login.html" class="login">Login</a>
+            <a href="register.html" class="register">Register</a>
+            <a href="calculator.html" class="calculator">Calculator </a>
+            <a href="bonus.html" class="bonus">Bonus </a>
+          </div>
+        </div>
+      </nav>
+      <!-- Body -->
+      <div class="body-container">
+        <h1 class="contact-heading">Contact Us</h1>
+        <form class="contact-form">
+          <label for="name">Name</label>
+          <input type="text" placeholder="Enter your Name" id="name" />
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your Email"
+          />
+          <label for="message">Message</label>
+          <textarea cols="30" rows="10" id="message"> </textarea>
+
+          <label for="priority">Priority</label>
+          <select name="priority" id="priority" id="priority">
+            <option value="front-end">Front-End Engineering</option>
+            <option value="back-end">Back-End Engineering</option>
+            <option value="cloud">Cloud Engineering</option>
+          </select>
+          <input type="button" value="Submit" />
+        </form>
+      </div>
+      <div class="spacer"></div>
+      <!-- Footer -->
+      <footer class="footer-container">
+        <div class="footer">
+          <p>&copy copyright 2022</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
